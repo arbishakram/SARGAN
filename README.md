@@ -1,6 +1,6 @@
 # SARGAN: Spatial Attention-based Residuals for Facial Expression Manipulation
 
-<p align="center"><img width="50%" src="imgs/sargan_teaser.png" /></p>
+<p align="center"><img width="100%" src="imgs/sargan_teaser.png" /></p>
 
 This repository provides the official implementation of the following paper:
 >[Learning Spatial Attention for Face Super-Resolution](https://arxiv.org/abs/2303.17212)<br>
