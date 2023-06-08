@@ -10,12 +10,10 @@ This repository provides the official implementation of the following paper:
 
 ## Test with Pretrained Model
 ```
-python main.py --test_dataset_dir ./testing_imgs/  --weights_dir ./pre-trained_models/ --model LSRF --image_size 128   \
-               --f 1  --mode test_inthewild --results_dir ./results/                               
+python main.py                              
 ```
 
 ## Train the Model
 ```
-python main.py --train_dataset_dir ./train_dataset/ --weights_dir ./weights/ --model LSRF --image_size 80   \
-               --f 9  --beta 60 --mode train --results_dir ./results/                                
+python main.py                                
 ```
