@@ -306,13 +306,12 @@ class Solver(object):
                 imgn = imgn.split('.')[0]
 
                 print(imgn[0])
-                for i in range(len(exp_list)):
-                    for c_trg in c_trg_list:     
-                          c_trg = c_trg_list[i]               
-                          x_fake = self.G(x_real, c_trg)                  
-                          result_path = os.path.join(self.result_dir, str(imgn)+'_SARGAN_'+str(exp_list[i])+'.png')
-                          save_image(self.denorm(x_fake[0]), result_path, nrow=1, padding=0)                         
-                          print('Saved real and fake images into {}...'.format(result_path))
+                for ii in range(len(exp_list)):  
+                         c_trg = c_trg_list[ii]               
+                         x_fake = self.G(x_real, c_trg)                  
+                         result_path = os.path.join(self.result_dir, str(imgn)+'_SARGAN_'+str(exp_list[ii])+'.png')
+                         save_image(self.denorm(x_fake[0]), result_path, nrow=1, padding=0)                         
+                         print('Saved real and fake images into {}...'.format(result_path))
                 
                 
 
