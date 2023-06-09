@@ -33,10 +33,10 @@ if __name__ == '__main__':
     parser.add_argument('--mode', type=str, default='test', choices=['train', 'test'])
     parser.add_argument('--use_tensorboard', type=str2bool, default=False)
     parser.add_argument('--image_dir', type=str, default='./testing_imgs/')
-    parser.add_argument('--log_dir', type=str, default='usgan/logs')
+    parser.add_argument('--log_dir', type=str, default='sargan/logs')
     parser.add_argument('--model_save_dir', type=str, default='pre-trained_model/')
-    parser.add_argument('--sample_dir', type=str, default='usgan/samples')
-    parser.add_argument('--result_dir', type=str, default='usgan/results')
+    parser.add_argument('--sample_dir', type=str, default='sargan/samples')
+    parser.add_argument('--result_dir', type=str, default='sargan/results')
 
     # Step size.
     parser.add_argument('--log_step', type=int, default=10)
