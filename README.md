@@ -16,8 +16,8 @@ python driver.py --mode test --image_size 128 --c_dim 7 --image_dir ./testing_im
 
 ## Train the Model
 ```
-python driver.py --mode train --image_size 128 --c_dim 7 --image_dir ./dataset/  --model_save_dir ./sargan/models/ --log_dir ./sargan/logs \
-                 --sample_dir ./sargan/samples --result_dir ./sargan/results                            
+python driver.py --mode train --image_size 128 --c_dim 7 -- batch_size 8 --image_dir ./dataset/  --model_save_dir ./sargan/models/ 
+                 --log_dir    ./sargan/logs --sample_dir ./sargan/samples --result_dir ./sargan/results                            
 ```
 
 ## Citation
