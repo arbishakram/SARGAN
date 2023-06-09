@@ -28,7 +28,7 @@ if __name__ == '__main__':
     parser.add_argument('--beta1', type=float, default=0.5, help='beta1 for Adam optimizer')
     parser.add_argument('--beta2', type=float, default=0.999, help='beta2 for Adam optimizer')
     parser.add_argument('--resume_iters', type=int, default=None, help='resume training from this step')
-    parser.add_argument('--test_iters', type=int, default=87000, help='test model from this step')
+    parser.add_argument('--test_iters', type=int, default=None, help='test model from this step')
     parser.add_argument('--num_workers', type=int, default=1)
     parser.add_argument('--mode', type=str, default='test', choices=['train', 'test'])
     parser.add_argument('--use_tensorboard', type=str2bool, default=False)
