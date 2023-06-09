@@ -10,10 +10,29 @@ This repository provides the official implementation of the following paper:
 
 ## Test with Pretrained Model
 ```
-python main.py                              
+python driver.py --mode test --image_size 128 --c_dim 7 --image_dir ./testing_imgs/ --model_save_dir ./pre-trained_model/ \
+                 --result_dir ./sargan/results                               
 ```
 
 ## Train the Model
 ```
-python main.py                                
+python driver.py --mode train --image_size 128 --c_dim 7 --image_dir ./dataset/  --model_save_dir ./sargan/models/ --log_dir ./sargan/logs \
+                 --sample_dir ./sargan/samples --result_dir ./sargan/results                            
 ```
+
+## Citation
+If you find this work useful for your research, please cite our paper:
+```
+@article{akram23sargan,
+  author={Akram, Arbish and Khan, Nazar},
+  journal={IEEE Transactions on Circuits and Systems for Video Technology}, 
+  title={SARGAN: Spatial Attention-based Residuals for Facial Expression Manipulation}, 
+  year={2023},
+  volume={},
+  number={},
+  pages={1-1},
+  doi={10.1109/TCSVT.2023.3255243}}
+```
+
+## Acknowledgement
+This code is based on Yunjey's [StarGAN](https://github.com/yunjey/stargan) with modifications.
